@@ -8,8 +8,8 @@ services:
       - 8080:8080
     restart: always
     volumes:
-      - ./data/config/app.json:/go/src/gin-api-boilerplate/data/config/app.json
-      - ./data/logs:/go/src/gin-api-boilerplate/data/logs
+      - ./data/config/app.json:/go/src/creator-service/data/config/app.json
+      - ./data/logs:/go/src/creator-service/data/logs
     depends_on:
       - db
       - redis

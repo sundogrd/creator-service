@@ -1,6 +1,6 @@
 FROM golang:1.9-alpine
 
-ENV appdir /go/src/gin-api-boilerplate
+ENV appdir /go/src/creator-service
 RUN mkdir -p $appdir
 WORKDIR $appdir
 

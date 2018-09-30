@@ -1,4 +1,4 @@
-# gin-api-boilerplate
+# creator-service(sundogrd)
 A Go RESTful API server with gin and docker
 
 ## 安装
@@ -6,7 +6,7 @@ A Go RESTful API server with gin and docker
 
 ````
 $ cd $GOPATH/src
-$ git clone https://github.com/ihahoo/gin-api-boilerplate.git
+$ git clone https://github.com/sundogrd/creator-service.git
 ````
 
 ## 启动开发环境
@@ -101,7 +101,7 @@ $ go get -d ./...
 
 ## 注意
 - 本脚手架使用[gin](https://github.com/gin-gonic/gin)作为HTTP框架，使用方式请查看官网。也可以换成其它HTTP框架，使用方式类似。
-- 由于Go的习惯，`$GOPATH/src/gin-api-boilerplate`为本项目的目录，根据自己的项目情况，请修改项目名称和路径，然后相关`gin-api-boilerplate`名称的都需修改，包括代码中`import`部分，也使用了类似`gin-api-boilerplate/lib/log`这样的名称(Go对相对路径支持不是很好，所以只好使用这种带有包名称的路径)
+- 由于Go的习惯，`$GOPATH/src/creator-service`为本项目的目录，根据自己的项目情况，请修改项目名称和路径，然后相关`creator-service`名称的都需修改，包括代码中`import`部分，也使用了类似`creator-service/lib/log`这样的名称(Go对相对路径支持不是很好，所以只好使用这种带有包名称的路径)
 - [golint](https://github.com/golang/lint)为Go语言的Lint工具。详情请看官网。可以设置代码编辑器支持`golint`动态检测。
 - 一些配套工具比如配置文件、日志、数据库、reids等封装库，放到[go-api-lib](https://github.com/ihahoo/go-api-lib)，
 - 主配置文件采用json格式，文件位置`data/config/app.json`，配置库使用了[viper](https://github.com/spf13/viper)，详情请查看官网。

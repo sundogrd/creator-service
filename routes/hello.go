@@ -1,7 +1,8 @@
 package routes
 
 import (
-	"gin-api-boilerplate/api"
+	"github.com/sundogrd/creator-service/api"
+
 	"github.com/gin-gonic/gin"
 )
 

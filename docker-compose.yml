@@ -9,7 +9,7 @@ services:
     ports:
       - 8080:3030
     volumes:
-      - .:/go/src/gin-api-boilerplate
+      - .:/go/src/creator-service
     depends_on:
       - db
       - redis

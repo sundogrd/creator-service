@@ -3,13 +3,13 @@ package main
 import (
 	"fmt"
 
-	"gin-api-boilerplate/routes"
+	"github.com/sundogrd/creator-service/utils/config"
+
+	"github.com/sundogrd/creator-service/routes"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ihahoo/go-api-lib/config"
-	"github.com/ihahoo/go-api-lib/dbx"
-	"github.com/ihahoo/go-api-lib/log"
-	"github.com/ihahoo/go-api-lib/redis"
+	"github.com/sundogrd/creator-service/utils/log"
+	"github.com/sundogrd/creator-service/utils/redis"
 )
 
 // CORSMiddleware ...

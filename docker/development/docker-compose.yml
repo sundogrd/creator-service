@@ -6,4 +6,4 @@ services:
       dockerfile: Dockerfile
     image: api-dev
     volumes:
-     - ../../:/go/src/gin-api-boilerplate
+     - ../../:/go/src/creator-service
