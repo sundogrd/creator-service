@@ -13,6 +13,8 @@ services:
     depends_on:
       - db
       - redis
+    environment:
+      - GO111MODULE=on
   db:
     image: postgres:9.6-alpine
     container_name: my-api-staging-db

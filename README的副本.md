@@ -18,7 +18,7 @@ $ go get github.com/codegangsta/gin
 ```
 $ make dev
 ```
-测试服务：`http://localhost:3030/hello`
+测试服务：`http://localhost:8086/hello`
 
 ## 构建和启动正式环境
 ```

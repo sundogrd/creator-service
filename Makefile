@@ -37,7 +37,7 @@ docker-image-staging: docker-build
 	@docker build -t my-api:staging .
 
 docker-image-dev:
-	@docker-compose -f docker/development/docker-compose.yml run --rm api dep ensure -v
+	@docker-compose -f docker/development/docker-compose.yml run --rm api
 
 start-docker-dev:
 	@docker-compose up -d
