@@ -5,11 +5,11 @@ services:
     container_name: my-api-staging 
     command: make start
     ports:
-      - 8080:8080
+      - 8086:8086
     restart: always
     volumes:
-      - ./data/config/app.json:/go/src/creator-service/data/config/app.json
-      - ./data/logs:/go/src/creator-service/data/logs
+      - ./data/config/app.json:/go/src/github.com/sundogrd/creator-service/data/config/app.json
+      - ./data/logs:/go/src/github.com/sundogrd/creator-service/data/logs
     depends_on:
       - db
       - redis

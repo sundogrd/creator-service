@@ -8,6 +8,7 @@ import (
 	"github.com/sundogrd/creator-service/routes"
 
 	"github.com/gin-gonic/gin"
+	"github.com/sundogrd/creator-service/utils/db"
 	"github.com/sundogrd/creator-service/utils/log"
 	"github.com/sundogrd/creator-service/utils/redis"
 )

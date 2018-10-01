@@ -1,11 +1,11 @@
-FROM golang:1.9-alpine
+FROM golang:1.11-alpine3.8
 
-ENV appdir /go/src/creator-service
+ENV appdir /go/src/github.com/sundogrd/creator-service
 RUN mkdir -p $appdir
 WORKDIR $appdir
 
-RUN echo http://mirrors.aliyun.com/alpine/v3.6/main > /etc/apk/repositories \
-    && echo http://mirrors.aliyun.com/alpine/v3.6/main >> /etc/apk/repositories \
-    && apk add --no-cache git make \
-    && go get -v github.com/golang/dep/cmd/dep \
-    && go get -v github.com/codegangsta/gin
+RUN echo http://mirrors.aliyun.com/alpine/v3.8/main > /etc/apk/repositories \
+    && echo http://mirrors.aliyun.com/alpine/v3.8/main >> /etc/apk/repositories \
+    && apk add --no-cache git make bash \
+    && git config --global http.sslVerify false \
+    # && go get -insecure -v github.com/codegangsta/gin

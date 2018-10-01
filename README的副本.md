@@ -49,9 +49,9 @@ $ docker-compose up -d
 
 第一次启动会稍微花费点时间自动构建docker镜像，成功构建镜像后，下次启动不会再花费时间构建镜像。 
 
-通过docker-compose启动api web, postgres, redis三个容器，api web端口为8080, postgres端口为5432, redis端口为6379。数据库可通过本地客户端工具连接进行操作和调试。
+通过docker-compose启动api web, postgres, redis三个容器，api web端口为8086, postgres端口为5432, redis端口为6379。数据库可通过本地客户端工具连接进行操作和调试。
 
-测试接口是否正常启动：请访问`http://localhost:8080/hello`看是否有反馈信息。
+测试接口是否正常启动：请访问`http://localhost:8086/hello`看是否有反馈信息。
 
 ### 停止开发环境
 ````
@@ -75,15 +75,7 @@ $ make docker-image
 ````
 
 ## 包依赖管理
-包依赖管理使用[Dep](https://github.com/golang/dep)，可以把当前项目的依赖模块安装到`vendor`目录下，使用Dep需要Go 1.8版本以上。具体[Dep](https://github.com/golang/dep)的使用请查看官网。
-
-本项目将`vendor`加入到git版本控制中，主要是因为一些包在国内会被屏蔽，另外做自动化构建和部署的时候，外部依赖包都在`vendor`中了，比较方便。
-
-引用了外部的依赖，请使用Dep来添加或者检查，将新的引用的包安装到`vendor`中，方便编译。
-### 安装Dep
-```
-$ go get -u github.com/golang/dep/cmd/dep
-```
+包依赖管理使用Go1.11出的Modules
 ### 初始化或检查依赖:
 ```
 $ dep ensure -v

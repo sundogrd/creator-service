@@ -23,7 +23,9 @@ doc:
 	godoc -http=:6060 -index
 
 dev:
-	@gin -a 8080 -p 3030 run main.go
+	@go build && go run main.go
+	# @gin -a 8086 -p 3030 run main.go
+	
 
 docker-build: clean
 	@docker-compose -f docker/development/docker-compose.yml run --rm api make build

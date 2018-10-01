@@ -6,4 +6,4 @@ services:
       dockerfile: Dockerfile
     image: api-dev
     volumes:
-     - ../../:/go/src/creator-service
+     - ../../:/go/src/github.com/sundogrd/creator-service

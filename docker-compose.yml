@@ -7,9 +7,9 @@ services:
     image: api-dev
     command: make dev 
     ports:
-      - 8080:3030
+      - 8086:3030
     volumes:
-      - .:/go/src/creator-service
+      - .:/go/src/github.com/sundogrd/creator-service
     depends_on:
       - db
       - redis
